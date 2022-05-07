@@ -1,19 +1,8 @@
-/* IMPOSTAZIONI GENERALI */
-
-/* HEADER */
-
-/* MAIN */
-
-/* FOOTER */
-
-/* RESPONSIVE */
-
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 1.8;
 }
-
 h1 {
     font-size: 4rem;
     line-height: 1.2;
@@ -34,11 +23,10 @@ p {
 }
 i[class] {
     color: #e42424;
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding-top: 2rem;
 }
-
-input {
+input[type=button] {
     font-size: 1.9rem;
     color: white;
     background: rgb(108,193,226);
@@ -46,16 +34,10 @@ input {
     border-width: 0px;
     padding: 1rem;
 }
-
-.container {
-
-}
-
 .header{
 
     
 }
-
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("images/banner.jpg");
     background-position: center;
@@ -71,13 +53,14 @@ input {
     font-weight: bolder;
     padding-bottom: 0.5rem;
 }
-
 .main {
     text-align: center;
     padding: 2rem;
     padding-bottom: 3rem;
 }
-
+.main i {
+    font-size: 4rem;
+}
 .scrivi {
     text-align: center;
     padding: 2rem;
@@ -90,5 +73,23 @@ input {
 .scrivi p {
     margin-top: 1rem;
 }
+.chi {
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+table[class] {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.footer {
+    background-color: rgb(238, 238, 238);
+    padding: 4rem;
+}
+.footer h3 {
+    font-size: 2rem;
 
-
+}
