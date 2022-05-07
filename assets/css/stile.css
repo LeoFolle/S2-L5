@@ -1,0 +1,94 @@
+/* IMPOSTAZIONI GENERALI */
+
+/* HEADER */
+
+/* MAIN */
+
+/* FOOTER */
+
+/* RESPONSIVE */
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+
+}
+h3 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+i[class] {
+    color: #e42424;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
+input {
+    font-size: 1.9rem;
+    color: white;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    border-width: 0px;
+    padding: 1rem;
+}
+
+.container {
+
+}
+
+.header{
+
+    
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("images/banner.jpg");
+    background-position: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    
+
+}
+.contentBanner {
+    color: white;
+    text-shadow: 0px 0px 6px black;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+
+.main {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.scrivi {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+    font-weight: bolder;
+    color: white;
+    background-color: #0c0633 ;
+}
+.scrivi p {
+    margin-top: 1rem;
+}
+
+
