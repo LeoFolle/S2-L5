@@ -21,6 +21,17 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: gray;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+li {
+    list-style: none;
+}
 i[class] {
     color: #e42424;
     font-size: 2.5rem;
@@ -34,9 +45,67 @@ input[type=button] {
     border-width: 0px;
     padding: 1rem;
 }
-.header{
+.container {
+    width: 100%;
+}
+.header {
+    box-shadow: 0 2px 10px rgb(226, 226, 226);
+    padding: 1em;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 2rem;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+input#menuButton {
+    display: none;
+}
+input#menuButton:checked ~ nav {
+    height:150px;
+}
+@media screen and (max-width: 768px) {
+    .header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    }
+    #registrati {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #menuMobile {
+        display: none;
+    }
 
-    
+    .header nav ul li{
+        margin-right: 2em;
+        display: inline-block;
+    }
+ 
+    .grid {
+        display: grid;
+        grid-template: 100% / auto auto auto;
+        grid-gap: 4rem;
+        }
+    .grid h3, .grid p {
+        text-align: left;
+    }
+    .chi {
+        display: flex;
+        padding: 1rem;
+    }
+
+
+
+
 }
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("images/banner.jpg");
@@ -52,6 +121,14 @@ input[type=button] {
     text-shadow: 0px 0px 6px black;
     font-weight: bolder;
     padding-bottom: 0.5rem;
+}
+#chiedi {
+    animation: dissolvenza 1.5s infinite;
+
+}
+@keyframes dissolvenza{
+    0%   {box-shadow: 0 0 0 0px rgb(0,0,0,1)}
+    100% {box-shadow: 0 0 0 15px rgb(0,0,0,0)}
 }
 .main {
     text-align: center;
@@ -80,16 +157,39 @@ input[type=button] {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-table[class] {
+table {
     margin-left: auto;
     margin-right: auto;
-    
+    padding-bottom: 1rem;
+}
+table[id] {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -40px;
 }
 .footer {
     background-color: rgb(238, 238, 238);
-    padding: 4rem;
+    padding-bottom: 2rem;
 }
 .footer h3 {
     font-size: 2rem;
+    padding-top: 1rem;
+}
+.footercontent {
+    padding: 4rem;
 
+}
+.itext {
+    width: 99%;
+    height: 70px;
+    margin-top: 2rem;
+    white-space: nowrap;
+    border-width: 0px;
+    font-size: 2.2rem;
+}
+.ibutton {
+    width: 100%;
+    height: 78px;
+    white-space: nowrap;
+    margin-bottom:2rem;
 }

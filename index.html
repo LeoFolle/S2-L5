@@ -19,7 +19,21 @@
 <body>
 <div class="container">
   <div class="header">
-    <i class="lni lni-more-alt"></i>
+    <div>
+      <a href="index.html" title="Homepage">
+          <img src="assets/css/images/logo.png" alt="logo epicode"></a>
+  </div>
+  <label for="menuButton" id="menuMobile"><i class="lni lni-more-alt"></i></label>
+  <input type="checkbox" id="menuButton">
+  <nav>
+      <ul>
+          
+          <li><a href="index.html" title="Homepage">Home</a></li>
+          <li><a href="chisiamo.html" title="Chi Siamo">Chi Siamo</a></li>
+          <li><a href="contatti.html" title="Contatti">Contatti</a></li>
+          <li><input type="button" id="registrati" value="Registrati"></li>
+      </ul>
+  </nav>
 
   </div>
 
@@ -41,19 +55,30 @@
       Segui il corso online, dove vuoi tu. <br>
        Il lavoro che andrai a fare è davvero figo.
     </p>
-    <i class="lni lni-comments"></i>
-    <h3>Tutti ti cercheranno</h3>
-    <p>Sono 30.000 in Italia le posizioni di developer, 
-      scoperte, scegli quella che ti stimola di più.</p>
-    <i class="lni lni-map-marker"></i>
-    <h3>Potrai lavorare dove vuoi</h3>
-    <p>Non serve lavorare in ufficio per essere
-      creatori di prodotti digitali, e le aziende lo
-      sanno. Lavora da casa, in riva al mare o in montagna.</p>    
-    <i class="lni lni-consulting"></i>
-    <h3>Azienda, Freelance o Startup</h3>
-    <p>Scegli più facilmente la carriera ed il rapporto
-      di lavoro che ti piace di più, in qualsiasi momento.</p> 
+    <div class="grid">
+      <div class="grid1">
+        <i class="lni lni-comments"></i>
+        <h3>Tutti ti cercheranno</h3>
+        <p>Sono 30.000 in Italia le posizioni di developer, 
+        scoperte, scegli quella che ti stimola di più.</p>
+      </div>
+      <div class="grid2">
+        <i class="lni lni-map-marker"></i>
+        <h3>Potrai lavorare dove vuoi</h3>
+        <p>Non serve lavorare in ufficio per essere
+        creatori di prodotti digitali, e le aziende lo
+        sanno. Lavora da casa, in riva al mare o in montagna.</p> 
+      </div>
+      <div class="grid3">
+        <i class="lni lni-consulting"></i>
+        <h3>Azienda, Freelance o Startup</h3>
+        <p>Scegli più facilmente la carriera ed il rapporto
+        di lavoro che ti piace di più, in qualsiasi momento.</p> 
+      </div>
+    </div>
+
+    
+    
   </div>
 
   <div class="scrivi">
@@ -63,36 +88,40 @@
   </div>
 
   <div class="chi">
-    <img src="assets/css/images/notebook.jpg" width="450px">
-    <table class="tab1">
+    <img src="assets/css/images/notebook.jpg" width="500px">
+    <div class="table">
+      <table>
       <tr>
         <td><i class="lni lni-happy">&nbsp;</i></td>
         <td><h3> Chi Sarai</h3></td>
       </tr>
     </table>
     <p>Il creatore delle app che usi tutti i giorni</p>
-    <table class="tab2">
+    <table>
       <tr>
         <td><i class="lni lni-cool">&nbsp;</i></td>
         <td><h3>Chi diventerai</h3></td>
       </tr>
     </table>
      <p>Lo specialista padrone del suo tempo e spazio</p>
-    <table class="tab2">
+    <table>
       <tr>
         <td><i class="lni lni-suspect"></i>&nbsp;</td>
         <td><h3>Chi non sarai</h3></td>
       </tr>
     </table>
      <p>Il nerd incollato allo schermo</p>
+    </div>
+    
   </div>
 
   <div class="footer">
+    <div class="footercontent">
     <h3>Chi siamo</h3>
     <p>Epicode School nasce con l'obbiettivo di rivoluzionare 
       la formazione in ambito tech.</p>
     <h3>Ti piace ciò che vedi? <br> condividilo con i tuoi amici!</h3>
-    <table>
+    <table id="social">
       <tr>
         <td><i class="lni lni-facebook-original">&nbsp;</i></td>
         <td><i class="lni lni-linkedin-original">&nbsp;</i></td>
@@ -101,8 +130,10 @@
     </table>
     <p>&nbsp;</p>
     <h3>Iscriviti alla nostra newsletter</h3>
-    <input type="text" class="vbtext">
-    <input type="button" class="vbbutton">
+    <input type="text" class="itext">
+    <input type="button" class="ibutton" value="Va Bene!">
+    <p>© 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+    </div>
   </div>
   
 </div>
