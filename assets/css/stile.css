@@ -79,37 +79,95 @@ input#menuButton:checked ~ nav {
     #registrati {
         display: none;
     }
+    #prezzimobile {
+        text-align: left;
+    }
+    #prezzidesktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 930px) {
+    .banner {
+        background-size: 100%;
+    }
 }
 @media screen and (min-width: 768px) {
+    .contentBanner {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
     #menuMobile {
         display: none;
     }
-
     .header nav ul li{
-        margin-right: 2em;
+        margin-right: 2rem;
         display: inline-block;
     }
- 
     .grid {
         display: grid;
-        grid-template: 100% / auto auto auto;
-        grid-gap: 4rem;
+        grid-template: 100% / 25% 25% 25%;
+        grid-gap: 3rem;
+        justify-content: center;
         }
-    .grid h3, .grid p {
+    .grid p, .table, .table a {
         text-align: left;
+        align-items: left;
+    }
+    .table {
+        padding: 2rem;
     }
     .chi {
         display: flex;
         padding: 1rem;
+        justify-content: center;
+        align-items: left;
+
     }
-
-
-
-
+    .footergrid {
+        display: grid;
+        grid-template: 100% / auto auto auto;
+        grid-gap: 3rem;
+        text-align: left;
+    }
+    .footer {
+        text-align: center;
+    }
+    table[class] {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contenutochisiamo {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    .gridchi {
+        display: grid;
+        grid-template: 100% / auto auto ;
+        grid-gap: 3rem;
+    }
+    #prezzimobile {
+        display: grid;
+    }
+    #prezzidesktop {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contattigrid {
+        padding-left: auto;
+        padding-right: auto;
+        display: grid;
+        grid-gap: 10%;
+        grid-template: 100% / 45% 45%;
+    }
+    .contatti {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("images/banner.jpg");
     background-position: center;
+
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -135,9 +193,7 @@ input#menuButton:checked ~ nav {
     padding: 2rem;
     padding-bottom: 3rem;
 }
-.main i {
-    font-size: 4rem;
-}
+.main i {font-size: 4rem;}
 .scrivi {
     text-align: center;
     padding: 2rem;
@@ -147,9 +203,7 @@ input#menuButton:checked ~ nav {
     color: white;
     background-color: #0c0633 ;
 }
-.scrivi p {
-    margin-top: 1rem;
-}
+.scrivi p {margin-top: 1rem;}
 .chi {
     margin: 2rem;
     text-align: center;
@@ -165,19 +219,15 @@ table {
 table[id] {
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: -40px;
 }
 .footer {
     background-color: rgb(238, 238, 238);
     padding-bottom: 2rem;
+    padding: 4rem;
 }
 .footer h3 {
     font-size: 2rem;
     padding-top: 1rem;
-}
-.footercontent {
-    padding: 4rem;
-
 }
 .itext {
     width: 99%;
@@ -193,3 +243,49 @@ table[id] {
     white-space: nowrap;
     margin-bottom:2rem;
 }
+.contenutochisiamo {margin: 2rem;text-align: center;}
+#foto1, #foto2 {padding-top: 1rem;}
+#prezzimobile th {padding: 0.5rem;}
+#prezzimobile td {padding: 0.5rem;width: 55%;}
+#prezzimobile tr[class], #prezzidesktop tr[class] {background-color: #d2dce7;}
+.prezzi {margin-top: 1rem; margin-bottom: 3rem;}
+#prezzidesktop th {
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #5c86ad;
+    color: white;
+}
+#prezzidesktop td, #prezzidesktop th{
+    padding: 1rem;
+}
+.contatti {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 3rem;
+    line-height: 1;
+}
+#areatesto {
+    font-family: monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    width: 90%;
+    padding: 1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.contatti input[id] {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    width: 90%;
+    padding: 1rem;
+}
+.contatti input[type=button]{
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.contatti p[id] {line-height: 1.8;}
