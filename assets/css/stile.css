@@ -146,7 +146,7 @@ input#menuButton:checked ~ nav {
         grid-gap: 3rem;
     }
     #prezzimobile {
-        display: grid;
+        display: none;
     }
     #prezzidesktop {
         margin-left: auto;
